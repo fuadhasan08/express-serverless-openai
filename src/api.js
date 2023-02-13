@@ -17,7 +17,7 @@ const router = express.Router()
 app.use(bodyParser.json())
 app.use(cors())
 
-router.get('/', async (req, res) => {
+router.get('/api', async (req, res) => {
   try {
     const response = await openai.createCompletion({
       model: 'text-davinci-003',
